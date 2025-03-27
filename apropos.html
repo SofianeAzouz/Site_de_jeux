@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/icon" href="image/multigames.png"/>
+    <title>À propos de moi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .search-container form {
+            display: inline-block;
+            position: relative;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            width: 300px;
+        }
+
+        .search-container button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .search-container button:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            margin-top: 50px;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-content {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="site.html">Accueil</a></li>
+                <li><a href="jeux.html">Jeux</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Rechercher.." name="search">
+                <button type="submit">Recherche</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>À propos de moi</h1>
+        <div class="about-content">
+            <p>Je suis un jeune développeur passionné par la création de sites web et d'applications. J'ai créé ce site pour explorer et approfondir mes compétences en développement web tout en partageant ma passion pour les jeux en ligne.</p>
+            <p>Étudiant en informatique, ce projet fait partie de mon parcours d'apprentissage autodidacte. Chaque jeu proposé sur ce site a été développé avec soin pour mettre en pratique mes connaissances en HTML, CSS et JavaScript.</p>
+            <p>Mon objectif est de créer des expériences interactives et amusantes tout en continuant à apprendre et à évoluer dans le domaine du développement web.</p>
+            <p>Merci de visiter mon site et de partager cette aventure technologique avec moi ! N'hésitez pas à jouer aux jeux que j'ai créés et à me faire part de vos retours.</p>
+        </div>
+    </div>
+</body>
+</html>

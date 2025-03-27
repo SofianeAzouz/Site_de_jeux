@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/icon" href="image/2048.png"/>
+    <a href="site.html"><button id="siteButton">Revenir a la page principal</button></a>
+    <style>
+        /* Styles pour le tableau de jeu */
+        .game-board {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(4, 100px);
+            gap: 10px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        
+        .tile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+        
+        .tile-2 { background-color: #eee4da; color: #776e65; }
+        .tile-4 { background-color: #ede0c8; color: #776e65; }
+        .tile-8 { background-color: #f2b179; color: #fff; }
+        .tile-16 { background-color: #f59563; color: #fff; }
+        .tile-32 { background-color: #f67c5f; color: #fff; }
+        .tile-64 { background-color: #f65e3b; color: #fff; }
+        .tile-128 { background-color: #edcf72; color: #fff; }
+        .tile-256 { background-color: #edcc61; color: #fff; }
+        .tile-512 { background-color: #edc850; color: #fff; }
+        .tile-1024 { background-color: #edc53f; color: #fff; }
+        .tile-2048 { background-color: #edc22e; color: #fff; }
+        /* Ajoutez d'autres styles si nécessaire pour les valeurs supérieures à 2048 */
+        
+        /* Style pour le message de fin de jeu */
+        .game-over {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>2048 Game</h1>
+    <div id="game-container">
+        <div class="game-board" id="game-board">
+            <!-- Les tuiles seront ajoutées dynamiquement ici -->
+        </div>
+        <div id="game-over-message" class="game-over" style="display: none;">
+            Game Over!
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="2048.js"></script>
+</body>
+</html>
